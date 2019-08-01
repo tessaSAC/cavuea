@@ -5,21 +5,41 @@
         <div class="card-content">
           <span class="card-title">
             {{ name }}
-            <a @click="adoptPig(id)" class="btn-floating waves-effect waves-light blue darken-3 right"><i class="material-icons">home</i></a>
+            <a
+              class="btn-floating waves-effect waves-light blue darken-3 right"
+              @click="adoptPig(id)"
+            ><i class="material-icons">home</i></a>
           </span>
-          <p v-if="description">{{ description }}</p>
+          <p v-if="description">
+            {{ description }}
+          </p>
           <span v-else>
             <label for="description">enter description below</label>
-            <input id="description" v-model="newDesc" @keyup.enter="addDesc(newDesc, id)" type="text" class="validate">
+            <input
+              id="description"
+              v-model="newDesc"
+              type="text"
+              class="validate"
+              @keyup.enter="addDesc(newDesc, id)"
+            >
           </span>
         </div>
         <div class="card-action right-align">
           <span v-if="description">
-            <a @click="eraseDesc" class="btn-floating waves-effect waves-light blue darken-3"><i class="material-icons">autorenew</i></a>
-            <a @click="resetDesc(id)" class="btn-floating waves-effect waves-light blue darken-3"><i class="material-icons">create</i></a>
+            <a
+              class="btn-floating waves-effect waves-light blue darken-3"
+              @click="eraseDesc"
+            ><i class="material-icons">autorenew</i></a>
+            <a
+              class="btn-floating waves-effect waves-light blue darken-3"
+              @click="resetDesc(id)"
+            ><i class="material-icons">create</i></a>
           </span>
           <span v-else>
-            <a @click="addDesc(newDesc, id)" class="btn-floating waves-effect waves-light blue darken-3"><i class="material-icons">add</i></a>
+            <a
+              class="btn-floating waves-effect waves-light blue darken-3"
+              @click="addDesc(newDesc, id)"
+            ><i class="material-icons">add</i></a>
           </span>
         </div>
       </div>
@@ -29,28 +49,27 @@
 
 <script>
 export default {
-  data: function() {
-    return {
-      newDesc: ''
-    }
-  },
   props: {
     id: Number,
     name: String,
     description: {
       type: String,
-      default: ''
+      default: '',
     },
     addDesc: Function,
     resetDesc: Function,
-    adoptPig: Function
+    adoptPig: Function,
+  },
+  data: function() {
+    return {
+      newDesc: '',
+    }
   },
   methods: {
     eraseDesc() {
       this.newDesc = ''
       this.resetDesc(this.id)
-    }
-  }
+    },
+  },
 }
 </script>
-
