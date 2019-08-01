@@ -5,11 +5,9 @@
         <a class="brand-logo center">Cavuea</a>
         <ul class="right">
           <li>
-            <a
-              class="waves-effect waves-light"
-              @click="addPig"
+            <a class="waves-effect waves-light" @click="addPig">
+              <i class="material-icons right">add_box</i>ADD PIG</a
             >
-              <i class="material-icons right">add_box</i>ADD PIG</a>
           </li>
         </ul>
       </div>

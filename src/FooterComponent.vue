@@ -6,8 +6,8 @@
         numAdopted === 0
           ? 'piggies (･ั(00)･ั)'
           : numAdopted === 1
-            ? 'pig! (▽-(00)-▽)♡'
-            : 'piggies! (´♡(oo)♡｀)'
+          ? 'pig! (▽-(00)-▽)♡'
+          : 'piggies! (´♡(oo)♡｀)'
       }}
     </div>
   </footer>

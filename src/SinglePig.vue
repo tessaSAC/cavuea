@@ -8,7 +8,8 @@
             <a
               class="btn-floating waves-effect waves-light blue darken-3 right"
               @click="adoptPig(id)"
-            ><i class="material-icons">home</i></a>
+              ><i class="material-icons">home</i></a
+            >
           </span>
           <p v-if="description">
             {{ description }}
@@ -21,7 +22,7 @@
               type="text"
               class="validate"
               @keyup.enter="addDesc(newDesc, id)"
-            >
+            />
           </span>
         </div>
         <div class="card-action right-align">
@@ -29,17 +30,20 @@
             <a
               class="btn-floating waves-effect waves-light blue darken-3"
               @click="eraseDesc"
-            ><i class="material-icons">autorenew</i></a>
+              ><i class="material-icons">autorenew</i></a
+            >
             <a
               class="btn-floating waves-effect waves-light blue darken-3"
               @click="resetDesc(id)"
-            ><i class="material-icons">create</i></a>
+              ><i class="material-icons">create</i></a
+            >
           </span>
           <span v-else>
             <a
               class="btn-floating waves-effect waves-light blue darken-3"
               @click="addDesc(newDesc, id)"
-            ><i class="material-icons">add</i></a>
+              ><i class="material-icons">add</i></a
+            >
           </span>
         </div>
       </div>

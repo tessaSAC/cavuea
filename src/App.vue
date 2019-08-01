@@ -1,16 +1,7 @@
 <template>
-  <div
-    id="body"
-    class="pink lighten-5"
-  >
-    <header-component
-      id="header"
-      :add-pig="addPig"
-    />
-    <div
-      id="main"
-      class="container"
-    >
+  <div id="body" class="pink lighten-5">
+    <header-component id="header" :add-pig="addPig" />
+    <div id="main" class="container">
       <div class="row">
         <div class="col s12 m10 offset-m3">
           <single-pig
@@ -26,10 +17,7 @@
         </div>
       </div>
     </div>
-    <footer-component
-      id="footer"
-      :num-adopted="numAdopted"
-    />
+    <footer-component id="footer" :num-adopted="numAdopted" />
   </div>
 </template>
 
