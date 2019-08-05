@@ -3,7 +3,7 @@
     <div class="container center">
       Adopted: {{ numAdopted }} happy
       {{
-        numAdopted === 0
+        !numAdopted
           ? 'piggies (･ั(00)･ั)'
           : numAdopted === 1
           ? 'pig! (▽-(00)-▽)♡'
@@ -17,6 +17,7 @@
 export default {
   props: {
     numAdopted: Number,
+    default: 0,
   },
 }
 </script>

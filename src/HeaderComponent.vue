@@ -19,6 +19,7 @@
 export default {
   props: {
     addPig: Function,
+    default: _ => {}
   },
 }
 </script>

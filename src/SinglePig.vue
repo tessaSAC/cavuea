@@ -54,15 +54,36 @@
 <script>
 export default {
   props: {
-    id: Number,
-    name: String,
+    id: {
+      type: Number,
+      default: 0,
+    },
+
+    name: {
+      type: String,
+      default: '',
+    },
+
     description: {
       type: String,
       default: '',
     },
-    addDesc: Function,
-    resetDesc: Function,
-    adoptPig: Function,
+
+    addDesc: {
+      type: Function,
+      default: _ => {}
+    },
+
+    resetDesc: {
+      type: Function,
+      default: _ => {}
+    },
+
+    adoptPig: {
+      type: Function,
+      default: _ => {}
+    },
+
   },
   data: function() {
     return {
