@@ -18,8 +18,10 @@
 <script>
 export default {
   props: {
-    addPig: Function,
-    default: _ => {}
+    addPig: {
+      type: Function,
+      default: _ => {},
+    },
   },
 }
 </script>

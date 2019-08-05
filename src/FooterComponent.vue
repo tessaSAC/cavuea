@@ -16,8 +16,10 @@
 <script>
 export default {
   props: {
-    numAdopted: Number,
-    default: 0,
+    numAdopted: {
+      type: Number,
+      default: 0,
+    },
   },
 }
 </script>

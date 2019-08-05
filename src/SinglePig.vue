@@ -71,19 +71,18 @@ export default {
 
     addDesc: {
       type: Function,
-      default: _ => {}
+      default: (_) => {},
     },
 
     resetDesc: {
       type: Function,
-      default: _ => {}
+      default: (_) => {},
     },
 
     adoptPig: {
       type: Function,
-      default: _ => {}
+      default: (_) => {},
     },
-
   },
   data: function() {
     return {
