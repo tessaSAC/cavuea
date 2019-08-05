@@ -8,8 +8,8 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "lint": "run-s lint:all:*",
-    "lint:prettier": "prettier --write --loglevel error",
-    "lint:all:prettier": "prettier --write --loglevel warn \"**/*.{js,json,css,scss,vue,html,md}\"",
+    "lint:prettier": "prettier --write --loglevel warn",
+    "lint:all:prettier": "prettier --write --loglevel error \"**/*.{js,json,css,scss,vue,html,md}\"",
     "lint:all:eslint": "eslint --fix --ext .js,.vue .",
     "minify:images": "imagemin \"**/*.{png,jpeg,jpg,gif,svg}\""
   },
