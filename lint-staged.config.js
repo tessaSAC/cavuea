@@ -1,3 +1,4 @@
+console.log(process.env.PRE_COMMIT)
 module.exports = process.env.PRE_COMMIT
   ? {
     '*.{png,jpeg,jpg,gif,svg}': ['imagemin-lint-staged', 'git add'],
