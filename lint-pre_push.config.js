@@ -1,7 +1,5 @@
 module.exports = {
-  '*.js': [
-    'yarn lint',
-  ],
+  '*.js': ['yarn lint'],
   // '{!(package)*.json,*.code-snippets,.!(browserslist)*rc}': [
   //   'yarn lint::prettier --parser json',
   //   'git add',
