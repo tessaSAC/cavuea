@@ -3,10 +3,11 @@
     <header-component id="header" :add-pig="addPig" />
     <div id="main" class="container">
       <div class="row">
-        <div class="col s12 m10 offset-m3"></div>
+        <div class="col s12 m10 offset-m3">
           <single-pig
             v-for="pig of piggies"
             :id="pig.id"
+            :key="pig.id"
             :name="pig.name"
             :description="pig.description"
             :add-desc="addDesc"
