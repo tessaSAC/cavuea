@@ -12,11 +12,9 @@
     "lint:all:eslint": "eslint --fix --ext .js,.vue .",
     "minify:images": "imagemin \"**/*.{png,jpeg,jpg,gif,svg}\""
   },
-  "lint-staged": {
-    "*.{png,jpeg,jpg,gif,svg}": [
-      "imagemin-lint-staged",
-      "git add"
-    ]
+  "gitHooks": {
+    "pre-commit": "cross-env PRE_COMMIT=true lint-staged",
+    "pre-push": "cross-env PRE_PUSH=true lint-pre_push"
   },
   "dependencies": {
     "g": "^2.0.1",
@@ -42,6 +40,7 @@
     "vue-loader": "^12.1.0",
     "vue-template-compiler": "^2.3.3",
     "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^2.4.5",
+    "yorkie": "^2.0.0"
   }
 }

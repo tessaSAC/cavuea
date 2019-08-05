@@ -1,0 +1,3 @@
+module.exports = {
+  '*.{png,jpeg,jpg,gif,svg}': ['imagemin-lint-staged', 'git add'],
+}
