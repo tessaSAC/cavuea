@@ -12,7 +12,7 @@
             :add-desc="addDesc"
             :reset-desc="resetDesc"
             :adopt-pig="adoptPig"
-          /
+          />
         </div>
       </div>
     </div>
