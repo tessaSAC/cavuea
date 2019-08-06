@@ -16,7 +16,7 @@
   },
   "gitHooks": {
     "pre-commit": "cross-env PRE_COMMIT=true lint-staged",
-    "pre-push": "lint"
+    "pre-push": "yarn lint"
   },
   "dependencies": {
     "g": "^2.0.1",
