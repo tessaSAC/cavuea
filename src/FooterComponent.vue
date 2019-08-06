@@ -17,8 +17,7 @@
 export default {
   props: {
     numAdopted: {
-      type: Number,
-      default: 0,
+      type: Number
     },
   },
 }

@@ -8,7 +8,7 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "lint": "run-s lint:all:*",
-    "lint:pre-push": " eslint --fix --max-warnings 1 --ext .js,.vue . && run-s lint:all:*",
+    "lint:pre-push": " eslint --fix --max-warnings 1 --ext .js,.vue .",
     "lint:prettier": "prettier --write --loglevel warn",
     "lint:all:prettier": "prettier --write --loglevel warn \"**/*.{js,json,css,scss,vue,html,md}\"",
     "lint:all:eslint": "eslint --fix --ext .js,.vue .",
@@ -16,7 +16,7 @@
   },
   "gitHooks": {
     "pre-commit": "cross-env PRE_COMMIT=true lint-staged",
-    "pre-push": "yarn lint:pre-push"
+    "pre-push": "run-s lint:pre-push"
   },
   "dependencies": {
     "g": "^2.0.1",
