@@ -19,7 +19,6 @@
     "pre-push": "yarn lint:pre-push"
   },
   "dependencies": {
-    "g": "^2.0.1",
     "vue": "^2.3.3"
   },
   "devDependencies": {
